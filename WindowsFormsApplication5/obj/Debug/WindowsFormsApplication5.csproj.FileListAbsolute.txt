@@ -1,0 +1,11 @@
+C:\Users\Raphael Thibierge\Documents\Visual Studio 2013\Projects\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\MonPaint.exe.config
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\MonPaint.exe.config
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\MonPaint.exe
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\bin\Debug\MonPaint.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csprojResolveAssemblyReference.cache
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.PaintWindow.resources
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\MonPaint.Properties.Resources.resources
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\WindowsFormsApplication5.csproj.GenerateResource.Cache
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\MonPaint.exe
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\MonPaint.pdb
+\\vmware-host\Shared Folders\Documents\Visual Studio\WindowsFormsApplication5\WindowsFormsApplication5\obj\Debug\MonPaint.Paramètres.resources
