@@ -106,13 +106,13 @@ namespace MonPaint
         #endregion
 
         #region fonctions
-        public void Dessine(Graphics g, int zoom)
+        public void Dessine(Graphics g)
         { // fonction qui dessine un trait
             if (!supprimé)
             {
 
 
-                Pen p = new Pen(couleur, epaisseur * zoom / 100);
+                Pen p = new Pen(couleur, epaisseur);
                 if (source != null && destination != null)
                     g.DrawLine(p, source.Centre(), destination.Centre());
                 if (texte != "")

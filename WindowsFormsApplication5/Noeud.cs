@@ -129,17 +129,17 @@ namespace MonPaint
             return p;
         }
 
-        public void Dessine(Graphics g, Point origin, int zoom)
+        public void Dessine(Graphics g, Point origin)
         { // fonction qui dessine le noeud
             if (!supprimé)
             {
                  Pen p;
                 if (selection)
-                    p = new Pen(couleurSelection, epaisseur * zoom / 100);
+                    p = new Pen(couleurSelection, epaisseur);
                 else
-                    p = new Pen(couleur, epaisseur * zoom / 100);
+                    p = new Pen(couleur, epaisseur);
 
-                rectDessin = new Rectangle((rect.X + origin.X) * zoom / 100, (rect.Y + origin.Y) * zoom / 100, rect.Width * zoom / 100, rect.Height * zoom / 100);
+                rectDessin = new Rectangle((rect.X + origin.X), (rect.Y + origin.Y), rect.Width, rect.Height);
                 g.DrawEllipse(p, rectDessin);
 
                 if (texte != "")

@@ -29,7 +29,6 @@ namespace MonPaint
         Trait traitCourant;
         int cptSommet; // compteur de sommet pour que chaque sommet ai une id différente
         Point origin; // définit l'origine du dessin, il est utilisé pour le scroll
-        int zoom;
         int sizeDefault;
 
         Selection rectSelection;
@@ -53,21 +52,20 @@ namespace MonPaint
             actionsAnnulées = new Stack<Action>();
             cptSommet = 0;
             origin = new Point(0, 0);
-            zoom = 100;
      
         }
         private void Dessin(object sender, PaintEventArgs e)
         { // fonction qui affiche à l'écran tous les noeuds et tous les traits
             foreach (Noeud n in collectionNoeud)
-                n.Dessine(e.Graphics, origin, zoom);
+                n.Dessine(e.Graphics, origin);
             foreach (Trait t in collectionTrait)
-                t.Dessine(e.Graphics, zoom);            
+                t.Dessine(e.Graphics);            
             
             if (noeudCourant != null)            
-                noeudCourant.Dessine(e.Graphics, origin, zoom);
+                noeudCourant.Dessine(e.Graphics, origin);
 
             if (traitCourant != null)
-                traitCourant.Dessine(e.Graphics, zoom);
+                traitCourant.Dessine(e.Graphics);
 
             if (rectSelection != null)
                 rectSelection.Dessine(e.Graphics);
@@ -615,9 +613,9 @@ namespace MonPaint
                 e.HasMorePages = true;
             else e.HasMorePages = false;
             foreach (Noeud n in collectionNoeud)
-                n.Dessine(e.Graphics, origin, zoom);
+                n.Dessine(e.Graphics, origin);
             foreach (Trait t in collectionTrait)
-                t.Dessine(e.Graphics, zoom);
+                t.Dessine(e.Graphics);
         }
         private void aperçuavantimpressionToolStripMenuItem_Click(object sender, EventArgs e)
         { // bouton aperçu avant impression
@@ -758,11 +756,7 @@ namespace MonPaint
            
         }
 
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-            zoom = (int)zoomNumeric.Value;
-            Refresh();
-        }
+        
 
 
 
